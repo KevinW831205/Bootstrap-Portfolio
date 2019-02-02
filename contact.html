@@ -1,7 +1,7 @@
 <!-- 
-    UpennLPS HW1 contact page
+    UpennLPS HW2 Bootstrap contact page
     Author: Kevin Wang
-    Date due: 2019/01/26
+    Date due: 2019/02/02
 -->
 
 <!DOCTYPE html>
@@ -11,47 +11,99 @@
 <head>
     <meta charset="UTF-8">
     <title>Kevin Cheng Fang Wang's Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
     <header>
         <div class="topBar">
-            <div class="nameBox">
-                <h1>Kevin Cheng Fang Wang</h1>
-            </div>
-            <div class="tabs">
-                <table>
-                    <tr>
-                        <td class="leftCell"><a href="index.html" id="noUL">About Me</a> </td>
-                        <td class="centerCell"><a href="portfolio.html" id="noUL">Portfolio</a></td>
-                        <td class="rightCell"><a href="contact.html" id="noUL">Contact</a></td>
-                    </tr>
-                </table>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-5 col-lg-4 nameBox">
+                        <div class="d-flex justify-content-center">
+                            <nav class="navbar navbar-default">
+                                <a class="navbar-brand">Kevin Cheng Fang Wang</a>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-7 col-lg-8">
+                        <div class=" d-flex justify-content-center justify-content-md-end">
+                            <nav class="navbar navbar-expand navbar-light">
+
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="index.html">About Me </a>
+                                        </li>
+                                        <li class="nav-iteme">
+                                            <a class="nav-link" href="portfolio.html">Portfolio<span class="sr-only">(current)</span></a>
+                                        </li>
+
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="contact.html">Contact</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
+
     </header>
 
-    <div class="mainContentBox">
+    <div class="container">
         <section class="mainContent">
-            <h2 class="pageTitle">Contact</h2>
-            <hr>
-            <form action="#">
+            <div class="row">
+                <div class="col-md-12 col-lg-8 mainContentBox">
+                    <div class="row">
+                        <div class=col-sm-12>
+                            <h2 class="pageTitle">Contact</h2>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                        <form action="#">
+                            <p>Name</p>
+                            <input type="text" placeholder="John Smith" class="inputBox1">
 
-                <p>Name</p>
-                <input type="text" placeholder="John Smith" class="inputBox1">
+                            <p>Email</p>
+                            <input type="email" placeholder="example@gmail.com" class="inputBox1">
 
-                <p>Email</p>
-                <input type="email" placeholder="example@gmail.com" class="inputBox1">
+                            <p>Message</p>
+                            <textarea class="inputBox2"></textarea><br>
 
-                <p>Message</p>
-                <textarea class="inputBox2"></textarea><br>
+                            <button type="submit" id="submitButton">Submit</button>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                <button type="submit" id="submitButton">Submit</button>
-            </form>
+
+
         </section>
+
     </div>
+
     <div class="footer">
     </div>
+
+
+
+
+
 </body>
 
 
